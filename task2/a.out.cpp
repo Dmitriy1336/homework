@@ -46,7 +46,9 @@ int main(int argc, char* argv[]) {
         std::cout << arr[i] << std::endl;
     }
     for (int i = 0; i < lenArr; i++) {
-        std::cout << arr[i] << " ";
+    if (i > 0) std::cout << " ";
+    std::cout << arr[i];
     }
+    std::cout << std::endl;
     delete[] arr;
 }
